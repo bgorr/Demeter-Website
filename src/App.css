@@ -1,6 +1,7 @@
 .App {
   display: flex;
   justify-content: center;
+  font-family: Tw Cen MT;
   background: url("./earth_space.jpg") center center;
 }
 
