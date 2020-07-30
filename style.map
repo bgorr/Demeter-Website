@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"scss/style.scss"
+	],
+	"sourcesContent": [
+		".main-container {\r\n  padding-top: 0vw;\r\n}\r\nbody { margin: 0;}\r\n\r\n.sticky {\r\n  background: black;\r\n  color: white;\r\n  width: 100%;\r\n  padding: 0px 0px;\r\n}\r\n\r\n.sticky {\r\n  margin-bottom: 150px;\r\n  position: absolute;\r\n  bottom: 0px;\r\n  transform: translateY(-100%);\r\n  width: 100%;\r\n}\r\na {\r\n  color: #555;\r\n  font-weight: 400;\r\n}\r\n\r\n.pSection {\r\n  position: relative;\r\n  \r\n}\r\n\r\n.container {\r\n  padding: 20px;\r\n  margin: 0 auto;\r\n  max-width: 1070px;\r\n  position: relative;\r\n  z-index: 1;\r\n}\r\n\r\n.pContent {\r\n  width: 65%;\r\n  background-color: rgba(78,152,21,0.8);\r\n  color: white;\r\n  padding: 40px 60px;\r\n}\r\n\r\n.pImage {\r\n  height: 100vh; \r\n\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,eAAe,CAAC;EACd,WAAW,EAAE,GAAG;CACjB;;;AACD,AAAA,IAAI,CAAC;EAAE,MAAM,EAAE,CAAC;CAAG;;;AAEnB,AAAA,OAAO,CAAC;EACN,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,OAAO;CACjB;;;AAED,AAAA,OAAO,CAAC;EACN,aAAa,EAAE,KAAK;EACpB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,SAAS,EAAE,iBAAiB;EAC5B,KAAK,EAAE,IAAI;CACZ;;;AACD,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,GAAG;CACjB;;;AAED,AAAA,SAAS,CAAC;EACR,QAAQ,EAAE,QAAQ;CAEnB;;;AAED,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,MAAM;EACjB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;CACX;;;AAED,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,sBAAmB;EACrC,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,SAAS;CACnB;;;AAED,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,KAAK;EAEb,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,CAAC;CACT"
+}
