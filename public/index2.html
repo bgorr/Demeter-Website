@@ -1,0 +1,127 @@
+<html>
+<head>
+<link rel="stylesheet" href="style2.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<link rel="stylesheet" href="teamstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/CSSRulePlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/EasePack.min.js"></script>
+
+<script src ="scroll2.js" defer></script>
+<script src ="team.js" defer></script>
+
+</head>
+<body>
+	<div id="root"></div>
+	<img class= "BImage pContent" src="earth2.jpg" alt="Filler image">
+	<img class= "FImage pImage" style="left: 35%;z-index:0;"src="bottlenice.png" alt="Filler image">
+	<div id="moreinfo" class= "BImage pContent2" style="height:240vh; background-attachment: fixed;background-position: center;  background-repeat: no-repeat;  background-size: cover;background-image:url('white_cosmic.jpg');position:relative;align-items:center;justify-content:center;">
+		<div class="" id="holder" style="z-index:20">
+		<div style="height: 120vh;">
+			<div style="position:relative;left:12.5%;top:10%;width:40%;z-index:'5';font-size:144pt;color: #76323f;"><b>Cosmic</b></div>
+
+			<div style="position:relative;left:10%;top:20%;width:40%;z-index:'5';font-size:50pt;color: #76323f;"><p>Enjoy the unique flavor of the first beverage made in space</p></div>
+			<a href="" ><div style="position:relative;left:22%;top:22%;content:url('orderbutton.png')"></div></a>
+		</div>
+		<div style="height: 120vh;">
+			<div style="position:relative;left:10%;top:20%;width:40%;z-index:'5';font-size:24pt;color: #76323f;"><p>Cosmic is a new category of alcoholic beverages that are entirely fermented in space. By utilizing the zero-gravity environment, we’ve crafted a unique flavor unlike anything on Earth. And we’re really excited to share it with the entire world</p></div>
+
+		</div>
+	</div>
+	
+	</div>
+	<div id="fermentation" class= "BImage" style="position:relative;align-items:center;justify-content:center;">
+		<img style="float:right" class= "" src="starship.png" alt="Filler image">
+		<div style="height: 100vh;">
+			<div style="position:relative;left:15%;top:50%;width:40%;z-index:'5';color: #76323f;"><p><span style="font-size:16pt;float:right">The magic happens in our </br> </span><span style="font-size:72pt;float:left;">
+Orbital Fermenters</span><span style="font-size:16pt"></br>
+We are developing the first in-space biochemical plant to produce Cosmic.</span>
+</p></div>
+
+		</div>
+	</div>
+	<div id="factory" style="position:relative;align-items:center;justify-content:center;">
+		<img class= "BImage" src="factory.png" alt="Filler image">
+	</div>
+	<div id="team" style="position:relative">
+			<div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app" style="position:relative;">
+			  <div class="team-container">
+	
+				<div class="person-list">
+				  <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)">
+				  <img class="person-img" :src="person.photo">
+					<div class="person-details">
+					  <h2 class="person-title">{{person.name}}</h2>
+					  <p class="person-desc">{{person.title}}</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="team-detail">
+				<div class="team-detail-inner" v-if="isOk">
+				  <div class="team-detail-left" >
+					<div class="team-detail-photo"><img :src="selectedPersonData.photo" alt="">
+					</div>
+				  </div>
+				  <div class="team-detail-right">
+					<div class="team-detail-bio">
+					  <div class="team-detail-header">
+						<h2 class="person-title">{{selectedPersonData.name}}</h2>
+						<p class="person-desc">{{selectedPersonData.title}}</p>
+						<div class="social">
+						  <a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+						</div>
+					  </div>
+					  <div class="team-detail-bio-content" v-html="selectedPersonData.bio">
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+	</div>
+	<div id="contactus" class= "" style="position:relative;align-items:center;justify-content:center;height: auto;width: 99vw;margin-bottom:10%">
+		<div style="content:url('logo.png');width:60vw;position:relative;margin:auto;margin-top:0%;"></div>
+		<a href="plan.pdf" target="_blank" ><div style="content:url('button.png');position:relative;margin:auto;margin-top:4%;"></div></a>
+		<div style="position:relative;margin:auto;top:0%;font-size:24pt">
+		
+				<center>Get in touch.<br><a href="mailto:contact@demeterspace.com">contact@demeterspace.com</a>.<br> </center>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+		<div class="main-container">
+		<div class="sticky">
+			<nav >				
+				<div >
+					<ul class="navlinks menu" style="float:right">
+						<li><a href="#">Cosmic</a></li>
+						<li><a href="#fermentation">Fermentation</a></li>
+						<li><a href="#factory">Factory</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contactus">Contact</a></li>
+					</ul>
+				</div>
+					
+				
+			</nav>	
+		</div>
+		</div>
+</body>
+
+</html>
