@@ -1,0 +1,129 @@
+@import url(//db.onlinewebfonts.com/c/9b62dc86f936227b3f7b367bd0b6c05e?family=Tw+Cen+MT);
+/* line 1, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.BImage {
+  height: 100vh;
+  width: 99.9vw;
+  z-index: -1;
+  scroll-snap-align: start;
+}
+
+/* line 9, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+#sellit {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 200vh;
+  width: 99.9vw;
+}
+
+/* line 16, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+#snapdiv {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
+}
+
+/* line 21, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.FImage {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+/* line 26, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.main-container {
+  padding-top: 0vw;
+}
+
+/* line 30, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.sticky {
+  z-index: 3;
+  background: transparent;
+  color: white;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+/* line 38, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.sticky {
+  z-index: 3;
+  margin-bottom: 150px;
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+/* line 47, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 51, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+/* line 60, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #1c1d22;
+  font-family: "Tw Cen MT";
+}
+
+/* line 68, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 77, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+
+/* line 83, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu li a {
+  font-size: 22px;
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+
+/* line 90, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu li:hover {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+  animation: line 1s;
+}
+
+/* line 95, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu li:hover a {
+  color: #d94f5c;
+}
+
+/* line 99, E:/WeebDev/htdocs/demeter/scss/style2.scss */
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
