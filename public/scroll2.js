@@ -32,4 +32,3 @@ gsap.to(".pImage", {
     scrub: true
   }, 
 });
-gsap.to(".pContent2", {
