@@ -1,0 +1,64 @@
+/* line 1, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.main-container {
+  padding-top: 0vw;
+}
+
+/* line 4, E:/WeebDev/htdocs/demeter/scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 6, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.sticky {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+/* line 13, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.sticky {
+  margin-bottom: 150px;
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+/* line 20, E:/WeebDev/htdocs/demeter/scss/style.scss */
+a {
+  color: #555;
+  font-weight: 400;
+}
+
+/* line 25, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.pSection {
+  position: relative;
+}
+
+/* line 30, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1070px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 38, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.pContent {
+  width: 65%;
+  background-color: rgba(78, 152, 21, 0.8);
+  color: white;
+  padding: 40px 60px;
+}
+
+/* line 45, E:/WeebDev/htdocs/demeter/scss/style.scss */
+.pImage {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
