@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="style2.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<link rel="stylesheet" href="teamstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/CSSRulePlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/EasePack.min.js"></script>
+
+<script src ="scroll2.js" defer></script>
+<script src ="team.js" defer></script>
+
+</head>
+<body>
+	<img class= "BImage pContent" src="earth2.jpg" alt="Filler image">
+	<img class= "FImage pImage" style="left: 35%;z-index:-1;"src="bottlenice.png" alt="Filler image">
+	<div id="opprotunity" class= "BImage pContent2" style="  background-attachment: fixed;background-position: center;  background-repeat: no-repeat;  background-size: cover;background-image:url('white_cosmic.jpg');position:relative;align-items:center;justify-content:center;">
+		<div class="FImage" id="holder">
+			<div style="height: 100vh;">
+				<img class= "pImage2" src="cosmic_intro.png" alt="Filler image">
+			</div>
+			<div style="height: 100vh;">
+				<img class= "pImage2" src="cosmic_sell.png" alt="Filler image">
+
+				<div style="left:10%;width:40%;z-index:'5',font-size:24pt;"><p>Cosmic is a new category of alcoholic beverages that are entirely fermented in space. By utilizing the zero-gravity environment, we’ve crafted a unique flavor unlike anything on Earth. And we’re really excited to share it with the entire world</p></div>
+			</div>
+		</div>
+	</div>
+	<div id="team" style="position:relative">
+			<div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app" style="position:relative;">
+			  <div class="team-container">
+	
+				<div class="person-list">
+				  <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)">
+				  <img class="person-img" :src="person.photo">
+					<div class="person-details">
+					  <h2 class="person-title">{{person.name}}</h2>
+					  <p class="person-desc">{{person.title}}</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="team-detail">
+				<div class="team-detail-inner" v-if="isOk">
+				  <div class="team-detail-left" >
+					<div class="team-detail-photo"><img :src="selectedPersonData.photo" alt="">
+					</div>
+				  </div>
+				  <div class="team-detail-right">
+					<div class="team-detail-bio">
+					  <div class="team-detail-header">
+						<h2 class="person-title">{{selectedPersonData.name}}</h2>
+						<p class="person-desc">{{selectedPersonData.title}}</p>
+						<div class="social">
+						  <a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+						</div>
+					  </div>
+					  <div class="team-detail-bio-content" v-html="selectedPersonData.bio">
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+	</div>
+
+	<div id="process" style="position:relative;align-items:center;justify-content:center;">
+		<img class= "BImage" src="factory.png" alt="Filler image">
+	</div>
+
+
+
+
+
+
+	<div style="z-index:500;" class="container main-container">
+
+		<div class="sticky">
+			<nav >				
+				<div >
+					<ul class="navlinks menu">
+						<li><a href="#">Cosmic</a></li>
+						<li><a href="#opprotunity">Opprotunity</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#process">Process</a></li>
+					</ul>
+				</div>
+					
+				
+			</nav>	
+		</div>
+	</div>
+</body>
+<footer>
+  Footer Section
+</footer>
+</html>
