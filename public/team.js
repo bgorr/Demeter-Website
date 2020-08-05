@@ -15,7 +15,7 @@ const persons = [
     name: "Lewis Jones",
     photo: "lewis.jpg",
     title: "CEO/Founder",
-    bio:'<p>Lewis brings perspective and technical skills having worked on 7 different spacecraft at 4 different space businesses including NASA and SpaceX. Engineer and economist by education, he leads business strategy and operations.</p>',
+    bio:'<p>Lewis brings perspective and technical skills having worked on 7 different spacecraft at 4 different space businesses including NASA and SpaceX. He holds degrees in mechanical engineering and economics from Caltech, and leads business strategy and operations at Demeter Space.</p>',
     social: {
       facebook: "#",
       twitter: "#",
@@ -27,14 +27,14 @@ const persons = [
     photo: "jack.jpg",
     title: "VP of Product Engineering",
     bio:
-      "<p>Jack has a background developing mechanical systems and high-pressure fluid systems for rockets, and research in biology, mathematics, physics, and robotics. He leads the fermentation process engineering and product development.</p>",
+      "<p>Jack was previously a research engineer on the Costar team for the DARPA subterranean competition. He has a varied background developing high-pressure fluid systems for rockets as well as research in biology, mathematics, physics, and robotics. He leads the fermentation process engineering and product development.</p>",
     social: {
       facebook: "#",
       twitter: "#",
       linkedin: "https://www.linkedin.com/in/jack-caldwell-038538179/"
     }
   },
-  
+
 ];
 
 const app = new Vue({
