@@ -22,7 +22,7 @@
 	/>
 	<script src ="scroll2.js" defer></script>
 	<script src ="team.js" defer></script>
-
+	<title>Demeter Space</title>
 </head>
 <body>
 <div id="root"></div>
@@ -35,7 +35,7 @@
 
 			<div style="position:relative;text-align:center;left:15%;top:30%;width:40%;z-index:'5';font-size:20pt;color: #76323f;"><i>The first beverage made in space</i></div>
 			<div style="position:relative;text-align:center;left:15%;top:32%;width:40%;">
-				<a href ="#">
+				<a href ="#contactus">
 					<img src="orderbutton.png">
 				</a>
 			</div>
@@ -50,9 +50,7 @@
 <div id="fermentation" class= "BImage" style="position:relative;align-items:center;justify-content:center;">
 	<img style="float:right" class= "" src="starship.png" alt="Filler image">
 	<div style="height: 100vh;">
-		<div style="position:relative;left:15%;top:50%;width:40%;z-index:'5';color: #76323f;"><p><span style="font-size:16pt;float:right">The magic happens in our </br> </span><span style="font-size:72pt;float:left;">
-Orbital Fermenters</span><span style="font-size:16pt"></br>
-			We are developing the first in-space biochemical plant to produce Cosmic.</span>
+		<div style="position:relative;text-align:right;left:10%;top:50%;width:40%;z-index:'5';color: #76323f;"><p><span style="font-size:72pt;float:left;">Orbital Fermenters</span><span style="font-size:20pt"></br>We are developing the first in-space biochemical plant to produce Cosmic.</span>
 		</p></div>
 
 	</div>
@@ -68,7 +66,7 @@ Orbital Fermenters</span><span style="font-size:16pt"></br>
 				<div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)">
 					<img class="person-img" :src="person.photo">
 					<div class="person-details">
-						<h2 class="person-title">{{person.name}}</h2>
+						<p class="person-title">{{person.name}}</p>
 						<p class="person-desc">{{person.title}}</p>
 					</div>
 				</div>
@@ -83,10 +81,10 @@ Orbital Fermenters</span><span style="font-size:16pt"></br>
 				<div class="team-detail-right">
 					<div class="team-detail-bio">
 						<div class="team-detail-header">
-							<h2 class="person-title">{{selectedPersonData.name}}</h2>
+							<p class="person-title">{{selectedPersonData.name}}</p>
 							<p class="person-desc">{{selectedPersonData.title}}</p>
 							<div class="social">
-								<a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+								<a href= "selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
 							</div>
 						</div>
 						<div class="team-detail-bio-content" v-html="selectedPersonData.bio">
@@ -99,11 +97,10 @@ Orbital Fermenters</span><span style="font-size:16pt"></br>
 
 </div>
 <div id="contactus" class= "" style="position:relative;align-items:center;justify-content:center;height: auto;width: 99vw;margin-bottom:10%">
-	<div style="content:url('logo.png');width:60vw;position:relative;margin:auto;margin-top:0%;"></div>
-	<a href="plan.pdf" target="_blank" ><div style="content:url('button.png');position:relative;margin:auto;margin-top:4%;"></div></a>
-	<div style="position:relative;margin:auto;top:0%;font-size:24pt">
+	<div style="content:url('logo.png');width:30vw;position:relative;margin:auto;margin-top:0%;"></div>
+	<div style="position:relative;margin:auto;top:20%;font-size:24pt">
 
-		<center>Get in touch.<br><a href="mailto:contact@demeterspace.com">contact@demeterspace.com</a>.<br> </center>
+		<center><br>Get in touch<br><a href="mailto:contact@demeterspace.com" style="color:#76323f">contact@demeterspace.com</a><br> </center>
 	</div>
 
 </div>
