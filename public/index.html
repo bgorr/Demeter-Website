@@ -84,7 +84,7 @@
 							<p class="person-title">{{selectedPersonData.name}}</p>
 							<p class="person-desc">{{selectedPersonData.title}}</p>
 							<div class="social">
-								<a href= "selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+								<a :href= "selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
 							</div>
 						</div>
 						<div class="team-detail-bio-content" v-html="selectedPersonData.bio">
