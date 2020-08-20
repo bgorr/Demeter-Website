@@ -21,7 +21,7 @@ gsap.to(".pContent", {
 });
 
 gsap.to(".pImage", {
-  yPercent: 50,
+  yPercent: 140,
   ease: "none",
   scrollTrigger: {
     trigger: ".pContent",
