@@ -32,15 +32,18 @@
 
 #myImg {
     position: absolute;
+    max-width: fit-content;
     left: 0;
+    max-height: 100%;
     top: 0;
+    object-fit: contain;
     right: 0;
-	min-width:400px;
     bottom: 0;
-	width:50%;
-	height:auto;
+    width: 100%;
+    height: auto;
     display: block;
-    margin: auto; }
+    margin: auto;
+}
 
 @import url(//db.onlinewebfonts.com/c/9b62dc86f936227b3f7b367bd0b6c05e?family=Tw+Cen+MT);
 html {
